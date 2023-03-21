@@ -1,0 +1,167 @@
+body{
+    background-image: url('./img/dashbordbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    
+}
+.navbar{
+    background-color:  rgba(255,255,255,0.4);
+    font-weight: bolder;
+    font-size: 20px;
+}
+.navbar-header{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.container>ul{
+    margin-top: 10px;
+}
+.main-container{
+display: flex;
+
+    font-weight:bolder;
+}
+.flex{
+    margin: 10px;
+}
+.task-container{
+    width: 70%;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    row-gap:10px;
+}
+.display-container{
+    width: 30%;
+    background-color:  rgba(255,255,255,0.4);
+    height: 630px;
+    border-radius: 10px;
+}
+.task-list{
+    width: 100%;
+    height: 70px;
+    background-color:  rgba(255,255,255,0.4);
+    border-radius: 10px;
+    padding: 1%;
+    font-size:x-large;
+    
+}
+.left-button{
+    display: flex;
+}
+.left-button>button:nth-child(1){
+    margin-left: auto;
+}
+.middile-container{
+    width: 100%;
+    display: flex;
+    height: 90%;
+    font-weight:bolder;
+}
+h3{
+    font-weight: bolder;
+}
+
+.notstarted,.inprogress,.compleated{
+    width: 32%;
+    height: 100%;
+    background-color:  rgba(255,255,255,0.2);
+    margin: 5px;
+    border-radius: 10px;
+    font-size: x-large;
+    padding: 1%;
+}
+
+.middle-title{
+    display: flex;
+}
+.dropdown-menu {
+    left:-70px;
+    width: auto;
+    min-width: 100px;
+}
+/* .middle-title>dropdown{
+    margin-left: auto;
+} */
+.dropdown{
+    margin-left: auto;
+}
+.middle-title>button{
+    margin-left: auto;
+}
+.dates{
+    /* display: flex; */
+    font-size: small;
+}
+#startDate{
+    width: 250px;
+}
+#endDate{
+    width: 250px;
+}
+#main-box{
+    height: 70%;
+    overflow: scroll;
+}
+#main-box::-webkit-scrollbar {
+    display: none;
+  }
+#task-box{
+    width:95%;
+    height:20%;
+    background-color:  rgba(255,255,255,0.4);
+    border-radius: 10px;
+    padding:3%;
+    margin-bottom: 15px;
+}
+
+#taskText{
+    width: 37%;
+    min-height:300px;
+    background-color:  rgba(255,255,255,0.2);
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+#taskheading{
+    font-size: 50px;
+    background-color: rgba(255,255,255,0);
+    width: 250px;
+}
+#filter-options{
+    align-self: flex-end;
+}
+#popup{
+    display: none;
+    background-color: rgb(8, 8, 8,0.8);
+    color:rgb(249, 64, 221);
+    position: absolute;
+    top:30%;
+    left: 40%;
+    padding: 2%;
+    text-align: center;
+    border: 2px solid rgba(255,255,255);
+    box-shadow: 15px 15px 15px rgb(241, 84, 220);
+    border-radius:15px;
+}
+#popup>select{
+    color:aqua
+}
+#popUpheading{
+    background-color: rgba(255,255,255,0);
+    /* font-size: x-large; */
+    
+}
+
+.btn-warning+select{
+    display: none;
+}
+.filter-selected+select{
+    display: block;
+}
+select{
+    font-size: small;
+}
+
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./img/icon.png" rel="icon" type="image/png"/>
+    <title>Timely</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <span><img src="./img/icon.png" height="40px" width="40px"/></span>  Timely
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+          <li><a href="./login"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  <div class="main-container">
+    <div class="task-container flex">
+      <div class="task-list left-button">
+        Task List 
+          &nbsp;
+          <button class="btn btn-info"><i class="fa fa-solid fa-calendar-days"></i></button>
+      </div>
+      <div class="middile-container">
+         <div class="notstarted "> 
+            <div class="middle-title">Not Started 
+              <div class="dropdown">
+                <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown" ><i title="Sort By" class=" fa fa-solid fa-filter"></i>
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Name</a></li>
+                  <li><a href="#">Start Date</a></li>
+                  <li><a href="#">End Date</a></li>
+                </ul>
+              </div>
+          </div>
+             <div class="containers ns" id="main-box">
+            </div>
+          </div> 
+          <div class="inprogress">
+            <div class="middle-title">In Progress
+              <div class="dropdown">
+                <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown" ><i title="Sort By" class=" fa fa-solid fa-filter"></i>
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Name</a></li>
+                  <li><a href="#">Start Date</a></li>
+                  <li><a href="#">End Date</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="containers ip" id="main-box">
+
+            </div>
+          </div>
+          <div class="compleated">
+            <div class="middle-title">Completed
+              <div class="dropdown">
+                <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown" ><i title="Sort By" class=" fa fa-solid fa-filter"></i>
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Name</a></li>
+                  <li><a href="#">Start Date</a></li>
+                  <li><a href="#">End Date</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="containers cc" id="main-box">
+
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="display-container flex">
+      <div class="container">
+        <div class="displayHeading">
+          Add Task
+        </div>
+        <input type="text" name="" id="taskheading" value="" placeholder="Task Heading">
+        <div class="form-group">
+          <label for="date">Start Date</label>
+          <input class="form-control" placeholder="date"
+          name="date" id="startDate" type="date"/>
+        </div>
+        <div class="form-group">
+          <label for="date">End Date</label>
+          <input class="form-control" placeholder="date"
+          name="date" id="endDate" type="date"/>
+        </div>
+        <!-- <div class="dropdown">
+          <input id="statusInput" type="text" list="input" data-toggle="dropdown" />
+          <datalist id="input" >
+            <option >Not Started</option>
+            <option>In Progress</option>
+            <option>Started</option>
+          </datalist>
+        </div> -->
+        <div id="task-content">
+          <h3>Description:-</h3>
+          <div >
+            <input id="taskText"/>
+          </div>
+        </div>
+        
+      </div>
+      <button id="taskdetails"class="btn btn-info" >Submit</button>
+    </div>
+  </div>
+
+  <!-- <div id="popup">
+    <label>Project Name</label>
+    <div>
+
+    
+    <input type="text" name="" id="popUpheading" value="Web Tech">
+    <div class="form-group">
+      <label for="date">Start Date</label>
+      <input class="form-control" placeholder="date"
+      name="date" id="popstartDate" type="date"/>
+    </div>
+    <div class="form-group">
+      <label for="date">End Date</label>
+      <input class="form-control" placeholder="date"
+      name="date" id="popendDate" type="date"/>
+    </div>
+    <button class="btn btn-success" onclick="edit()" >Update</button>
+  </div> -->
+
+  <script>
+    let email = '<%-email%>'
+  </script>
+  <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+          <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    
+        </head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./img/icon.png" rel="icon" type="image/png"/>
+        <title>Timely</title>
+        <link rel="stylesheet" href="register.css"/>
+      </head>
+<body>
+    <center><h1 class="heading"><img src="./img/icon.png" height="40px" width="40px"/> TIMELY</h1></center>
+    <!--Login -->    
+    <div class="container">
+        <div class="panel panel-primary" >
+            <div class="panel-heading" >
+                <h2>Login</h2>
+            </div>
+            <div class="panel-body" >
+                <form action="/login" method="POST">
+                    
+                    <!-- <div class="form-group col-md">
+                            <label for="firstname">User Name</label>
+                            <span class="input-group-addon"></span>
+                            <input  class="form-control" placeholder="User Name"
+                            name="name" id="firstname" required 
+                            />
+                    </div> -->
+                    <div class="form-group col-md">
+                        <label for="email">E-mail</label>
+                        <input class="form-control" placeholder="a@a.com"
+                        name="email" id="email" type="email" required/>
+                    </div>
+                    <div class="form-group col-md">
+                            <label for="password">Password</label>
+                            <input class="form-control" placeholder="Password"
+                            name="password" id="password" type="password" 
+                            onInput="checkPassword()"/>
+                            <p id="pout"></p>
+                            <div id="ppout"></div>
+                    </div>
+                    <span class = "glyphicon glyphicon-user"></span>
+                        <button type="submit" class="btn btn-success">
+                            Login
+                            <!-- <a href="./home">Login</a> -->
+                        </button>
+                        
+                        <p>Do not have an account <a href="./register" style="color: white">Register ?</a></p>
+                    </form>
+                    <% if (locals.message) { %>
+                        <h2><%= message %></h2>
+                    <% } %>
+            </div>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
